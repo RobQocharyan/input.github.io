@@ -1,7 +1,5 @@
 //Խնդիր 2։Ստեղծել input 5 հատ մուտքագրենք տվյալներ տեղափոխի աղյուսակի մեջ
 
-let selectedRow = null;
-
 let form = document.createElement("form");
 document.body.appendChild(form);
 let input = document.createElement("input");
@@ -33,38 +31,24 @@ input1111.placeholder = "Bonus";
 
 button.setAttribute("autocomplete", "off") + "\n";
 
-// function personObj() {
-//   debugger;
-//   let obj = {};
-//   const objKeys = ["name", "lastname", "age", "salary"];
-//   objKeys.forEach((key) => {
-//     obj[key] = document.getElementsByTagName("inpute").value;
-//   });
-
-//   return obj;
-// }
-
 document.write("<br>");
 document.write("<br>");
 
 button.setAttribute("onclick", "clickFunction()");
 
-button.addEventListener("click", clickFunction);
-
 let table = document.createElement("table");
 document.body.appendChild(table);
-table.style.cssText = "width:100%;height:200px;border:1px solid green";
+table.style.cssText = "width:400px;height:200px;border:1px solid green";
 
 function clickFunction() {
   let tr = document.createElement("tr");
   document.body.appendChild(tr);
   table.appendChild(tr);
 
-
   let td = document.createElement("td");
   document.body.appendChild(td);
   td.style.border = "1px solid  green";
-  tr.appendChild(td).innerHTML = input1.value;
+  tr.appendChild(td).innerHTML = input.value;
 
   let td1 = document.createElement("td");
   document.body.appendChild(td1);
